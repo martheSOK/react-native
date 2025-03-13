@@ -1,0 +1,566 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.11.26)  3 MAR 2025 14:05
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**codes.tex
+(./codes.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen139
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count193
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count194
+\leftroot@=\count195
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count196
+\DOTSCASE@=\count197
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count198
+\c@MaxMatrixCols=\count199
+\dotsspace@=\muskip16
+\c@parentequation=\count266
+\dspbrk@lvl=\count267
+\tag@help=\toks19
+\row@=\count268
+\column@=\count269
+\maxfields@=\count270
+\andhelp@=\toks20
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks21
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count271
+\l__pdf_internal_box=\box52
+)
+(./codes.aux)
+\openout1 = `codes.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 33--33
+[]\OT1/cmtt/m/n/10 import React, { createContext, useState, useEffect, ReactNod
+e } from 'react';[] 
+ []
+
+
+Overfull \hbox (17.24684pt too wide) in paragraph at lines 183--183
+[]        \OT1/cmtt/m/n/10 .min(4, "Mot de passe doit ^etre plus grand que 8 ca
+ract^^Reres")[] 
+ []
+
+
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 183--183
+[]        \OT1/cmtt/m/n/10 .max(50, "Mot de passe doit ^etre plus petit que 50 
+caract^^Reres"),[] 
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (38.24666pt too wide) in paragraph at lines 183--183
+[]        \OT1/cmtt/m/n/10 const response = await fetch('http://localhost:8080/
+api/login', {[] 
+ []
+
+
+Overfull \hbox (158.9956pt too wide) in paragraph at lines 183--183
+[]          \OT1/cmtt/m/n/10 //  throw new Error('Une erreur est survenue lors 
+de l\'enregistrement des donn^^Sees.');[] 
+ []
+
+
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 183--183
+[]        \OT1/cmtt/m/n/10 // Optionally handle errors appropriately, e.g., sho
+w a notification[] 
+ []
+
+[2] [3]
+Overfull \hbox (143.24574pt too wide) in paragraph at lines 183--183
+[]                                \OT1/cmtt/m/n/10 <div className="form-group d
+-flex justify-content-end gap-3">[] 
+ []
+
+
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 183--183
+[]                                        \OT1/cmtt/m/n/10 className="btn btn-p
+rimary"[] 
+ []
+
+
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 183--183
+[]                                        \OT1/cmtt/m/n/10 className="btn btn-d
+anger"[] 
+ []
+
+[4]
+Overfull \hbox (17.24684pt too wide) in paragraph at lines 388--388
+[]        \OT1/cmtt/m/n/10 .min(8, "Mot de passe doit ^etre plus grand que 8 ca
+ract^^Reres")[] 
+ []
+
+
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 388--388
+[]        \OT1/cmtt/m/n/10 .max(50, "Mot de passe doit ^etre plus petit que 50 
+caract^^Reres"),[] 
+ []
+
+
+Overfull \hbox (80.24629pt too wide) in paragraph at lines 388--388
+[]                \OT1/cmtt/m/n/10 const response = await fetch('http://localho
+st:8080/api/users', {[] 
+ []
+
+
+Overfull \hbox (190.49533pt too wide) in paragraph at lines 388--388
+[]                    \OT1/cmtt/m/n/10 throw new Error('Une erreur est survenue
+ lors de l\'enregistrement des donn^^Sees.');[] 
+ []
+
+[5]
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 388--388
+[]                    \OT1/cmtt/m/n/10 <h1 className="text-center">Cr^^Seer un 
+compte</h1>[] 
+ []
+
+
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 388--388
+[]                        \OT1/cmtt/m/n/10 onSubmit={(values) =>handleSubmit(va
+lues)}[] 
+ []
+
+[6]
+Overfull \hbox (48.74657pt too wide) in paragraph at lines 388--388
+[]                                        \OT1/cmtt/m/n/10 <label htmlFor="sexe
+">Sexe:</label>[] 
+ []
+
+
+Overfull \hbox (80.24629pt too wide) in paragraph at lines 388--388
+[]                                        \OT1/cmtt/m/n/10 <div role="group" ar
+ia-labelledby="sexe">[] 
+ []
+
+
+Overfull \hbox (326.99414pt too wide) in paragraph at lines 388--388
+[]                                                \OT1/cmtt/m/n/10 <Field type=
+"radio" name="sexe" value="masculin" className="form-check-input" />[] 
+ []
+
+
+Overfull \hbox (321.74419pt too wide) in paragraph at lines 388--388
+[]                                                \OT1/cmtt/m/n/10 <Field type=
+"radio" name="sexe" value="feminin" className="form-check-input" />[] 
+ []
+
+
+Overfull \hbox (263.99469pt too wide) in paragraph at lines 388--388
+[]                                        \OT1/cmtt/m/n/10 </div><ErrorMessage 
+name="sexe" component="small" className="text-danger" />[] 
+ []
+
+[7]
+Overfull \hbox (143.24574pt too wide) in paragraph at lines 388--388
+[]                                \OT1/cmtt/m/n/10 <div className="form-group d
+-flex justify-content-end gap-3">[] 
+ []
+
+
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 388--388
+[]                                        \OT1/cmtt/m/n/10 className="btn btn-p
+rimary"[] 
+ []
+
+
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 388--388
+[]                                        \OT1/cmtt/m/n/10 className="btn btn-d
+anger"[] 
+ []
+
+
+Overfull \hbox (127.49588pt too wide) in paragraph at lines 615--615
+[]\OT1/cmtt/m/n/10 import { View, Text, StyleSheet, FlatList, TouchableOpacity,
+ Button } from 'react-native';[] 
+ []
+
+[8]
+Overfull \hbox (95.99615pt too wide) in paragraph at lines 615--615
+[]      \OT1/cmtt/m/n/10 if (!response.ok) throw new Error('Erreur lors de la r
+^^Secup^^Seration des cours');[] 
+ []
+
+
+Overfull \hbox (206.2452pt too wide) in paragraph at lines 615--615
+[]   \OT1/cmtt/m/n/10 // recupererRoleUtilisateur();  // R^^Secup^^Serer le r^o
+le de l'utilisateur ^^Ra chaque chargement du composant[] 
+ []
+
+
+Overfull \hbox (69.74638pt too wide) in paragraph at lines 615--615
+[]        \OT1/cmtt/m/n/10 const response = await fetch(`http://localhost:8080/
+api/cours/${id}`, {[] 
+ []
+
+
+Overfull \hbox (43.49661pt too wide) in paragraph at lines 615--615
+[]      \OT1/cmtt/m/n/10 console.log('Aucune donn^^See utilisateur trouv^^See d
+ans localStorage.');[] 
+ []
+
+[9]
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 615--615
+[]          \OT1/cmtt/m/n/10 <Text style={[styles.tableCell, { flex: 2 }]}>Titr
+e</Text>[] 
+ []
+
+
+Overfull \hbox (43.49661pt too wide) in paragraph at lines 615--615
+[]          \OT1/cmtt/m/n/10 <Text style={[styles.tableCell, { flex: 3 }]}>Desc
+ription</Text>[] 
+ []
+
+
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 615--615
+[]          \OT1/cmtt/m/n/10 <Text style={[styles.tableCell, { flex: 1 }]}>Prix
+</Text>[] 
+ []
+
+
+Overfull \hbox (17.24684pt too wide) in paragraph at lines 615--615
+[]          \OT1/cmtt/m/n/10 <Text style={[styles.tableCell, { flex: 1 }]}>Cr^^
+Sedit</Text>[] 
+ []
+
+
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 615--615
+[]          \OT1/cmtt/m/n/10 <Text style={[styles.tableCell, { flex: 3 }]}>Acti
+ons</Text>[] 
+ []
+
+
+Overfull \hbox (69.74638pt too wide) in paragraph at lines 615--615
+[]              \OT1/cmtt/m/n/10 <Text style={[styles.tableCell, { flex: 2 }]}>
+{item.titre}</Text>[] 
+ []
+
+
+Overfull \hbox (101.24611pt too wide) in paragraph at lines 615--615
+[]              \OT1/cmtt/m/n/10 <Text style={[styles.tableCell, { flex: 3 }]}>
+{item.description}</Text>[] 
+ []
+
+
+Overfull \hbox (90.7462pt too wide) in paragraph at lines 615--615
+[]              \OT1/cmtt/m/n/10 <Text style={[styles.tableCell, { flex: 1 }]}>
+{item.prix} FCfa</Text>[] 
+ []
+
+
+Overfull \hbox (169.49551pt too wide) in paragraph at lines 615--615
+[]              \OT1/cmtt/m/n/10 <Text style={[styles.tableCell, { flex: 1, pad
+dingRight: 10 }]}>{item.credit}</Text>[] 
+ []
+
+
+Overfull \hbox (80.24629pt too wide) in paragraph at lines 615--615
+[]                  \OT1/cmtt/m/n/10 {/* Conditionner l'affichage des boutons '
+edit' et 'delete' */}[] 
+ []
+
+
+Overfull \hbox (552.74217pt too wide) in paragraph at lines 615--615
+[]                            \OT1/cmtt/m/n/10 onPress={() => navigation.naviga
+te('updateCours',{id:item.id,titre:item.titre,description:item.description,prix
+:item.prix,credit:item.credit})}[] 
+ []
+
+
+Overfull \hbox (326.99414pt too wide) in paragraph at lines 615--615
+[]                      \OT1/cmtt/m/n/10 <TouchableOpacity style={styles.action
+Button} activeOpacity={0.7} onPress={() => SupprimerCours(item.id)}>[] 
+ []
+
+
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 615--615
+[]                        \OT1/cmtt/m/n/10 <Icon name="delete" size={20} color=
+"red" />[] 
+ []
+
+
+Overfull \hbox (17.24684pt too wide) in paragraph at lines 615--615
+[]                      \OT1/cmtt/m/n/10 <Link href={{ pathname: '../quiz/id', 
+params: {[] 
+ []
+
+
+Overfull \hbox (116.99597pt too wide) in paragraph at lines 615--615
+[]                      \OT1/cmtt/m/n/10 <TouchableOpacity style={styles.action
+Button} activeOpacity={0.7}>[] 
+ []
+
+
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 615--615
+[]                        \OT1/cmtt/m/n/10 <Icon name="quiz" size={20} color="#
+000" />[] 
+ []
+
+[10]
+Overfull \hbox (116.99597pt too wide) in paragraph at lines 615--615
+[]                      \OT1/cmtt/m/n/10 <TouchableOpacity style={styles.action
+Button} activeOpacity={0.7}>[] 
+ []
+
+
+Overfull \hbox (38.24666pt too wide) in paragraph at lines 615--615
+[]                        \OT1/cmtt/m/n/10 <Icon name="person-add" size={20} co
+lor="#000" />[] 
+ []
+
+
+Overfull \hbox (279.74455pt too wide) in paragraph at lines 615--615
+[]        \OT1/cmtt/m/n/10 <TouchableOpacity onPress={() => setCurrentPage((pre
+v) => Math.max(prev - 1, 1))} disabled={currentPage === 1}>[] 
+ []
+
+
+Overfull \hbox (38.24666pt too wide) in paragraph at lines 615--615
+[]        \OT1/cmtt/m/n/10 <Text style={styles.pageInfo}>{currentPage} / {total
+Pages}</Text>[] 
+ []
+
+
+Overfull \hbox (374.24373pt too wide) in paragraph at lines 615--615
+[]        \OT1/cmtt/m/n/10 <TouchableOpacity onPress={() => setCurrentPage((pre
+v) => Math.min(prev + 1, totalPages))} disabled={currentPage === totalPages}>[]
+ 
+ []
+
+[11] [12]
+Overfull \hbox (143.24574pt too wide) in paragraph at lines 774--774
+[]\OT1/cmtt/m/n/10 import { AuthContext } from '../../context/AuthProvider'; //
+ Corrigez le chemin d'importation[] 
+ []
+
+
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 774--774
+[]  \OT1/cmtt/m/n/10 const { user } = useContext(AuthContext); // Utilisez le c
+ontexte Auth[] 
+ []
+
+[13]
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 774--774
+[]      \OT1/cmtt/m/n/10 const response = await fetch('http://localhost:8080/ap
+i/cours', {[] 
+ []
+
+
+Overfull \hbox (116.99597pt too wide) in paragraph at lines 774--774
+[]          \OT1/cmtt/m/n/10 'Authorization': `Bearer ${user.token}`, // Utilis
+ez le token de l'utilisateur[] 
+ []
+
+
+Overfull \hbox (127.49588pt too wide) in paragraph at lines 774--774
+[]        \OT1/cmtt/m/n/10 throw new Error('Une erreur est survenue lors de l\'
+enregistrement des donn^^Sees.');[] 
+ []
+
+[14]
+Overfull \hbox (17.24684pt too wide) in paragraph at lines 774--774
+[]                  \OT1/cmtt/m/n/10 <label htmlFor="description">Description :
+ </label>[] 
+ []
+
+
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 774--774
+[]                \OT1/cmtt/m/n/10 <div className="form-group d-flex justify-co
+ntent-end gap-3">[] 
+ []
+
+[15]
+Overfull \hbox (17.24684pt too wide) in paragraph at lines 951--951
+[]\OT1/cmtt/m/n/10 import { Link, useRouter } from 'expo-router';  // Importez 
+useRouter[] 
+ []
+
+[16]
+Overfull \hbox (127.49588pt too wide) in paragraph at lines 951--951
+[]            \OT1/cmtt/m/n/10 const response = await fetch(`http://localhost:8
+080/api/cours/${values.id}`, {[] 
+ []
+
+
+Overfull \hbox (179.99542pt too wide) in paragraph at lines 951--951
+[]                    \OT1/cmtt/m/n/10 'Authorization': `Bearer ${user.token}`,
+  // Ajouter le token d'authentification[] 
+ []
+
+
+Overfull \hbox (64.49643pt too wide) in paragraph at lines 951--951
+[]                \OT1/cmtt/m/n/10 body: JSON.stringify(values), // Convertit l
+es valeurs en JSON[] 
+ []
+
+[17]
+Overfull \hbox (48.74657pt too wide) in paragraph at lines 951--951
+[]                    \OT1/cmtt/m/n/10 <h1 className="text-center">Mettre ^^Ra 
+jour le cours</h1>[] 
+ []
+
+
+Overfull \hbox (38.24666pt too wide) in paragraph at lines 951--951
+[]                                    \OT1/cmtt/m/n/10 <label htmlFor="titre">T
+itre:</label>[] 
+ []
+
+
+Overfull \hbox (101.24611pt too wide) in paragraph at lines 951--951
+[]                                    \OT1/cmtt/m/n/10 <label htmlFor="descript
+ion">Description:</label>[] 
+ []
+
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 951--951
+[]                                    \OT1/cmtt/m/n/10 <label htmlFor="prix">Pr
+ix:</label>[] 
+ []
+
+[18]
+Overfull \hbox (48.74657pt too wide) in paragraph at lines 951--951
+[]                                    \OT1/cmtt/m/n/10 <label htmlFor="credit">
+Credit:</label>[] 
+ []
+
+
+Overfull \hbox (143.24574pt too wide) in paragraph at lines 951--951
+[]                                \OT1/cmtt/m/n/10 <div className="form-group d
+-flex justify-content-end gap-3">[] 
+ []
+
+
+Overfull \hbox (106.49606pt too wide) in paragraph at lines 951--951
+[]                                    \OT1/cmtt/m/n/10 <button type="submit" cl
+assName="btn btn-primary">[] 
+ []
+
+
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 951--951
+[]                                        \OT1/cmtt/m/n/10 className="btn btn-d
+anger"[] 
+ []
+
+[19]
+Overfull \hbox (111.74602pt too wide) in paragraph at lines 1083--1083
+[]\OT1/cmtt/m/n/10 import { Button, Image, StyleSheet, Text, TouchableOpacity, 
+View } from 'react-native';[] 
+ []
+
+[20]
+Overfull \hbox (43.49661pt too wide) in paragraph at lines 1083--1083
+[]      \OT1/cmtt/m/n/10 <ModifierCour  navigation={navigation} route={route}><
+/ModifierCour>[] 
+ []
+
+[21] [22] (./codes.aux) ) 
+Here is how much of TeX's memory you used:
+ 1648 strings out of 480177
+ 23491 string characters out of 5893866
+ 341630 words of memory out of 5000000
+ 19659 multiletter control sequences out of 15000+600000
+ 470340 words of font info for 32 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 54i,5n,62p,222b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+
+Output written on codes.pdf (22 pages, 80622 bytes).
+PDF statistics:
+ 95 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

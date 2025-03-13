@@ -1,0 +1,14 @@
+\babel@toc {english}{}\relax 
+\beamer@sectionintoc {1}{Introduction à React native}{3}{0}{1}
+\beamer@sectionintoc {2}{Création d’un Projet React Native}{6}{0}{2}
+\beamer@sectionintoc {3}{Rôle des Fichiers et Dossiers du Projet}{8}{0}{3}
+\beamer@sectionintoc {4}{Composants }{11}{0}{4}
+\beamer@sectionintoc {5}{les composants en react}{21}{0}{5}
+\beamer@sectionintoc {6}{Les props et state}{25}{0}{6}
+\beamer@sectionintoc {7}{Les providers}{29}{0}{7}
+\beamer@sectionintoc {8}{Les Navigations}{44}{0}{8}
+\beamer@sectionintoc {9}{Gestion de l’état et des données}{48}{0}{9}
+\beamer@sectionintoc {10}{Formulaires}{55}{0}{10}
+\beamer@sectionintoc {11}{Authentification avec provider}{66}{0}{11}
+\beamer@sectionintoc {12}{Le deploiement }{66}{0}{12}
+\beamer@sectionintoc {13}{Conclusion}{66}{0}{13}

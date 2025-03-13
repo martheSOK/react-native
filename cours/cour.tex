@@ -1,0 +1,1121 @@
+\documentclass[5pt]{beamer}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+ \usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{listings}
+
+\usepackage{listings}
+\usefonttheme{professionalfonts}
+\setbeamertemplate{itemize items}[ball]
+
+\usepackage{enumitem,xcolor}
+\definecolor{lightgray}{RGB}{220 220 220}
+
+\lstset{language=C++,tabsize=4, literate={é}{{\'e}}1 {è}{{\`e}}1 {ê}{{\^e}}1 {à}{{\`a}}1, stringstyle=\color{red}, keywordstyle=\color{blue}, identifierstyle=\color{black}}%{É}{{\'E}}1
+
+\newcommand{\code}[1]{\colorbox{lightgray}{\lstinline~#1~}}
+
+\usetheme{Darmstadt}
+\definecolor{clearblueifnti}{RGB}{24,116,220}
+\setbeamercolor{title}{use=structure,bg=clearblueifnti,fg=white}
+
+\makeatletter
+\setbeamertemplate{title page}{
+  \vbox{}
+  \vfill
+  \begingroup
+    \centering\hspace{2cm}
+    \begin{minipage}{.7\textwidth}
+    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+      \usebeamerfont{title}\inserttitle\par%
+      \ifx\insertsubtitle\@empty%
+      \else%
+        \vskip0.25em%
+        {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+      \fi%     
+    \end{beamercolorbox}%
+    \end{minipage}
+
+    \vskip2.8em\par
+    \begin{minipage}{\textwidth}
+    \begin{beamercolorbox}[sep=8pt,center]{author}
+      \usebeamerfont{author}\insertauthor
+    \end{beamercolorbox}
+    \end{minipage}
+
+    \begin{minipage}{\textwidth}
+    \begin{beamercolorbox}[sep=8pt,center]{institute}
+      \usebeamerfont{institute}\insertinstitute
+    \end{beamercolorbox}
+    \end{minipage}
+
+    \begin{minipage}{\textwidth}
+    \begin{beamercolorbox}[sep=8pt,center]{date}
+      \usebeamerfont{date}\insertdate
+    \end{beamercolorbox}
+    \end{minipage}
+    \vskip0.5em
+    {\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
+  \endgroup
+  \vfill
+}
+\makeatother
+
+\title{UElibre :Présentation de React native }
+\institute{IFNTI S4}
+\author{Presenté par :SANKARA sarata \& TOURE Chabane}
+
+\date{\today}
+
+\setbeamertemplate{footline}
+{
+  \hbox{
+  \begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}
+  \begin{beamercolorbox}[wd=.6\paperwidth,ht=2.25ex,dp=1ex,center]{date in head/foot}
+    \usebeamerfont{date in head/foot}\insertshortsubtitle{} : \inserttitle{} - \insertshortinstitute{} - \insertdate
+  \end{beamercolorbox}
+  \begin{beamercolorbox}[wd=.1\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}
+    \usebeamerfont{title in head/foot}\insertframenumber{} / \inserttotalframenumber
+  \end{beamercolorbox}}
+}
+
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{2}}
+
+\begin{document}
+
+{
+\setbeamertemplate{headline}{\vskip\headheight}
+\setbeamertemplate{footline}{}
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{1}}
+\begin{frame}[plain]
+	%\vspace{5cm}
+	\titlepage\end{frame}
+}
+
+\begin{frame}{Table des matières}
+	%\begin{multicols}{2}
+	\tableofcontents
+	%\end{multicols}
+\end{frame}
+
+{\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsection\par
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+
+
+% \section{ Introduction  }
+
+
+
+
+
+%^\begin{frame}[fragile]{}
+%\begin{block}{}
+%\begin{center}
+%\includegraphics[scale=0.25]{Immo.jpeg}
+
+%\end{center}
+%\end{block}
+%\end{frame}
+
+% \section{Installation}
+%¨\section{Présentation du besoin}
+
+\section{Introduction à React native}
+\begin{frame}[fragile]{Introduction}
+\begin{block}{Qu'est ce que react vative}
+React native est un framework puissant pour créer des applications
+mobiles multi-plateformes avec JavaScript et React.Il a été
+développer par facebook 
+	\end{block}
+\end{frame}
+\begin{frame}[fragile]{Installation des Outils}
+\begin{block}{Installation de l’outil Expo}
+$ \bullet $ Expo est un ensemble d’outils et de services conçus pour
+faciliter le développement d’applications React Native.
+
+$ \bullet $ Pour installer Expo, utilisez les commandes suivantes:
+    \begin{lstlisting}
+npm install expo-cli -g (installation globale)
+npm install expo-cli (installation locale)
+    \end{lstlisting}
+	\end{block}
+\end{frame}
+\section{Création d’un Projet React Native}
+
+\begin{frame}{Avec npx }
+    \begin{itemize}
+        \item Pour créer un projet React Native, utilisez les commandes suivantes.
+        \item npx create-expo-app@latest
+        
+    \end{itemize}
+       
+\end{frame}
+
+
+\section{Rôle des Fichiers et Dossiers du Projet}
+\begin{frame}[fragile]{}
+\begin{block}{}
+Voici une description des principaux fichiers et dossiers générés :\\
+$ \bullet $\textbf{le dossier App} : est le coeur de notre application il contient le fichier index.tsx qui est le point d’entrée de l’application.Toutles fichiers qui sont dans ce dossier sont des navigations.
+
+$ \bullet $ \textbf{Le dossier assets }: Contient les images et fichiers statiques.
+
+$ \bullet $  \textbf{node modules} : Contient les dépendances du projet.
+
+ $ \bullet $ \textbf{Le dossier components} : Contient les les composants du
+projet.
+ $ \bullet $ \textbf{Le dossier constantes} : Contient les constantes du projet.
+ 
+ 
+ $ \bullet $ \textbf{app.json} : Configuration de l’application.
+ $ \bullet $ \textbf{ package.json }: Liste des dépendances et configurations.
+ 
+ $ \bullet $\textbf{ Le dossier script} : contient les scripts de notre projet
+ $ \bullet $\textbf{ babel.config.js }: Configuration de Babel pour transpiler le
+code.
+ 
+ $ \bullet $ \textbf{package-lock.json} : Assure la cohérence des versions des
+dépendances.
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Démarrage et Exécution du Projet}
+\begin{block}{}
+Commandes pour démarrer le projet :
+\begin{lstlisting}
+npm run start : Démarre le projet React Native.
+npm run android : Démarre le projet sur Android.
+npm run web : Démarre le projet sur le web
+ \end{lstlisting}
+    \end{block}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Composants }
+\begin{frame}[fragile]{Composant}
+\begin{block}{Création de composants}
+Un composant est une fonction ou une classe qui retourne du JSX.\\
+Exemple :
+\begin{lstlisting}
+function Bonjour(props) {
+  return <h1>Bonjour, {props.nom}!</h1>;
+}
+\end{lstlisting}
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Props}
+\begin{block}{Utilisation des Props}
+Les \textbf{props} sont des arguments passés aux composants pour les personnaliser. Exemple :
+\begin{lstlisting}
+<Bonjour nom="Jean" />
+\end{lstlisting}
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Composants native}
+\begin{block}{Qu'est ce qu'un composant}
+Un composant en React Native est une unité de code représentant
+une partie de l’interface utilisateur.
+Quelques composants natives sont :
+   \end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Composant Text}
+\begin{block}{}
+\textbf{Le composant Text} sert à afficher des chaines de texte et gère les événements tactiles.\\
+Fourni par React Native, il est analogue à la balise <p> en
+HTML.
+\begin{verbatim}
+import React from 'react';
+import {  Text,View } from 'react-native';
+export default function Home() {
+  return ( 
+<View>
+	<Text> Bienvenue sur mon projet react native</Text>
+</View>)
+\end{verbatim}
+
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Composant Image}
+\begin{block}{}
+\textbf{Le composant Image}  sert à afficher différents types
+d’images.L’attribut source prend uri, qui contient le chemin de
+l’image, et on peut avoir l’attribut style pour personnaliser
+l’affichage de l’image.
+\begin{verbatim}
+import React from 'react';
+import {  Image } from 'react-native';
+export default function Home() {
+  return (
+<Image style={styles.image} source={{ uri: ’https://
+reactnative.dev/img/tiny_logo.png’ }} />
+)
+\end{verbatim}
+
+
+    \end{block}
+\end{frame}
+\begin{frame}[fragile]{Composant Link}
+\begin{block}{}
+\textbf{Le composant Link}  est utilisé pour naviguer entre les écrans
+\begin{verbatim}
+import React from 'react';
+import {  Text } from 'react-native';
+import { Link } from 'expo-router'; 
+export default function Home() {
+  return ( 
+<Link href="/propos">
+	<Text>a propos</Text>
+</Link>)
+\end{verbatim}
+
+
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Composant View}
+\begin{block}{}
+\textbf{Le composant View}\\
+Conteneur prenant en charge la mise en page, le style et les
+contrôles d’accessibilité.\\
+Analogue à la balise <div> en HTML
+\begin{verbatim}
+import React from 'react';
+import { View, Text } from 'react-native';
+export default function Home() {
+  return (
+<View>
+	<Text>bienvenue</Text>
+</View>
+);
+\end{verbatim}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Composant Stack}
+\begin{block}{}
+\textbf{Le composant Stack}\\
+permer de créer une pile de navigation et
+permet d’ajouter de nouveaux itinéraires dans votre application
+\begin{verbatim}
+import { Stack} from 'expo-router';
+import { View } from 'react-native';
+
+
+    return (
+         <View style={styles.container}>
+              <Stack.Screen
+                options={{
+                  title: "page de login",
+                }}
+              />
+             
+            </View>
+    )
+}
+\end{verbatim}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Composant StyleSheet}
+\begin{block}{}
+\textbf{Le composant StyleSheet}\\
+Module utilisé pour créer et gérer les styles.\\
+ Avantages :\\
+ Organisation : Les styles sont centralisés.\\
+ Validation : Les propriétés des styles sont vérifiées.\\
+ Réutilisabilité : Les styles peuvent être appliqués à plusieurs
+composants.\\
+ Clarté : Les styles sont séparés de la logique.
+ Les noms des propriétés suivent le format camelCase (ex.
+backgroundColor)
+\begin{verbatim}
+
+import  React from 'react';
+import {  StyleSheet, Text, View } from 'react-native';
+
+
+export default function Index() {
+   return (
+
+    <View style={styles.container} >
+      	<Text> Test StyleSheet </Text>
+    </View>
+    
+   );
+ }
+
+
+ const styles=StyleSheet.create({
+  container: {
+     flex: 1,
+     backgroundColor: '#fff',
+     alignItems: 'center',
+     justifyContent: 'center',
+  },
+  
+});
+\end{verbatim}
+\end{block}
+\end{frame}
+
+
+\section{les composants en react}
+
+\begin{frame}[fragile]{}
+\begin{block}{}
+
+Nous avons deux types de composants les composants fonctionnels
+et les composants de classe
+
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Les composants fonctionnel}
+\begin{block}{}
+
+ce sont des fonctions qui retourne du javaScript Xml (JSX) ou TypeScript xml (TSX).Exemple
+\begin{verbatim}
+import  React from 'react';
+import {  StyleSheet, Text, View } from 'react-native';
+
+
+export default function ComposantFonctionel() {
+   return (
+
+    <View style={styles.container} >
+      	<Text> Test ComposantFonctionel </Text>
+    </View>
+    
+   );
+ }
+
+
+ const styles=StyleSheet.create({
+  container: {
+     flex: 1,
+     backgroundColor: '#fff',
+     alignItems: 'center',
+     justifyContent: 'center',
+  },
+  
+});
+\end{verbatim}
+\end{block}
+\end{frame}
+
+
+\begin{frame}[fragile]{Les composants de classe}
+\begin{block}{}
+
+ce sont des classe qui heritent de la classe Component.Exemple
+\begin{verbatim}
+import React, { Component } from 'react';
+
+class Compteur extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 }; // Déclaration du state
+  }
+
+  incrementer = () => {
+    this.setState({ count: this.state.count + 1 }); // Modification du state
+  };
+
+  render() {
+    return (
+      <div>
+        <h1>Compteur : {this.state.count}</h1>
+        <button onClick={this.incrementer}>Incrémenter</button>
+      </div>
+    );
+  }
+}
+
+export default Compteur;
+\end{verbatim}
+\end{block}
+\end{frame}
+
+
+
+
+
+\section{Les props et state}
+\begin{frame}[fragile]{ Les props}
+\begin{block}{Les props }
+Les props : Transmettent des informations à un composant
+\end{block}
+\end{frame}
+\begin{frame}[fragile]{ Les state}
+\begin{block}{Les state }
+Le state : Variable interne qui existe à l’intérieur d’un
+composant
+
+\end{block}
+\end{frame}
+\begin{frame}[fragile]{ Différences entre props et state}
+\begin{block}{Props }
+Données immuables.\\
+Transmises d’un composant à un autre.
+\end{block}
+\begin{block}{State }
+Données mutables.\\
+Utilisées uniquement à l’intérieur du composant
+\end{block}
+\end{frame}
+
+\section{Les providers}
+\begin{frame}[fragile]{ Définition}
+\begin{block}{}
+Provider permet de transmettre les données du context aux composants enfants.
+
+\end{block}
+\end{frame}
+\begin{frame}[fragile]{ createContext}
+\begin{block}{createContext }
+createContext permet de créer un contexte que les composants peuvent fournir ou lire\\
+const SomeContext = createContext(defaultValue)
+
+\end{block}
+\end{frame}
+\begin{frame}[fragile]{Exemple de provider pour l'authentification}
+\begin{block}{ }
+
+\begin{verbatim}
+import React, { createContext, useState,
+ useEffect, ReactNode } from 'react';
+const initialValues = {
+    email: "",
+    token: "",
+    authorities: "",
+  };
+export const AuthContext = createContext();
+export const AuthProvider = ({ children }) => {
+  const [user, setUser] = useState(initialValues);
+  \end{verbatim}
+
+\end{block}
+\end{frame}
+\begin{frame}[fragile]{}
+\begin{block}{ }
+\begin{verbatim}
+
+  return (
+    <AuthContext.Provider value={{ user, setUser }}>
+      {children}
+    </AuthContext.Provider>
+  );
+};
+
+\end{verbatim}
+\end{block}
+
+\end{frame}
+\begin{frame}[fragile]{useContext}
+\begin{block}{useContext }
+useContext permet de aux composant enfants d’accéder au context depuis le composant parent
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Exemple}
+\begin{block}{utiliser}
+
+\begin{verbatim}
+import React, { useEffect } from 'react';
+import {Formik, Field, Form, ErrorMessage} from 'formik';
+import * as Yup from 'yup';
+import "bootstrap/dist/css/bootstrap.css";
+import { AuthContext } from '@/context/AuthProvider';
+const validationSchema = Yup.object().shape({
+    email: Yup.string()
+        .email("email invalide")
+        .required("l'email est obligatoire"),
+    password: Yup.string()
+        .required("Mot de passe est obligatoire")
+        .min(4, "Mot de passe doit être plus grand que 8 caractères")
+        .max(50, "Mot de passe doit être plus petit que 50 caractères"),
+});
+\end{verbatim}
+
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{}
+\begin{block}{}
+\begin{verbatim}
+
+interface DetailsProps {
+    cours: {
+        id:number,
+    },
+  }
+
+  const Login =  ({ navigation }) => {
+    const initialValues = {
+        email: "",
+        password: "",
+    };
+
+    const { user , setUser } = React.useContext(AuthContext);
+  
+const handleSubmit = async (values) => { 
+\end{verbatim}
+
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{}
+\begin{block}{}
+\begin{verbatim}
+   
+    try {
+        const response = await fetch('http://localhost:8080/api/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(values),
+        });
+
+        if (!response.ok) {
+          //  throw new Error('Une erreur est survenue lors de l\'enregistrement des données.');
+            alert("mot de passe ou email incorrect");
+        }
+
+        const data = await response.json();
+        console.log('Données enregistrées:', data);
+        \end{verbatim}
+
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{}
+\begin{block}{}
+\begin{verbatim}
+        setUser(data);
+        if(user){
+            navigation.navigate('cours');
+        }
+    }
+    
+    catch (error) {
+        console.error('Erreur:', error);
+        // Optionally handle errors appropriately, e.g., show a notification
+    }
+}
+
+useEffect (() => {  
+    console.log(user);
+    
+}, [user]);
+\end{verbatim}
+
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{}
+\begin{block}{}
+\begin{verbatim}
+    return (
+        <div className="container">
+            <div className="row">
+                <div className="col-md-6 offset-md-3 pt-3">
+                    <Formik
+                        initialValues={initialValues}
+                        validationSchema={validationSchema}
+                        onSubmit={handleSubmit}
+                        >
+                        {({ resetForm }) => (
+                            <Form>
+                                
+                                <div className="form-group mb-3">
+                                    <label htmlFor="email">
+                                        email:
+                                    </label>
+                                    \end{verbatim}
+
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{}
+\begin{block}{}
+\begin{verbatim}
+                                    <Field
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        className="form-control"
+                                    />
+                                    <ErrorMessage
+                                        name="email"
+                                        component="small"
+                                        className="text-danger"
+                                    />
+                                </div>
+                              
+                                <div className="form-group mb-3">
+                                    <label htmlFor="password">
+                                        Mot de passe:
+                                    </label>
+                                    \end{verbatim}
+
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{}
+\begin{block}{}
+\begin{verbatim}
+                                    <Field
+                                        type="password"
+                                        id="password"
+                                        name="password"
+                                        className="form-control"
+                                    />
+                                    <ErrorMessage
+                                        name="password"
+                                        component="small"
+                                        className="text-danger"
+                                    />
+                                </div>
+                               
+                               
+                                <div className="form-group d-flex justify-content-end gap-3">
+                                    <button
+                                        type="submit"
+          \end{verbatim}
+
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{}
+\begin{block}{}
+\begin{verbatim}
+                                        className="btn btn-primary"
+                                    >
+                                        Se connecter
+                                    </button>
+                                    <button
+                                        type="button"
+                                        onClick={resetForm}
+                                        className="btn btn-danger"
+                                    >
+                                        Annuler
+                                    </button>
+                                </div>
+                            </Form>
+                        )}
+                    </Formik>
+                </div>
+            </div>
+            \end{verbatim}
+
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{}
+\begin{block}{}
+\begin{verbatim}
+        </div>
+    );
+};   
+export default Login;
+
+\end{verbatim}
+
+\end{block}
+
+\end{frame}
+
+
+
+\section{Les Navigations}
+\begin{frame}[fragile]{ }
+\begin{block} {}
+La navigation est une bibliotheque qui permet de configurer les
+écrans dune application\end{block}
+\end{frame}
+\begin{frame}[fragile]{ Installation et mise en place}
+\begin{block}{}
+\begin{verbatim}
+npm install @react-navigation/native 
+@react-navigation/native-stack
+
+npx expo install react-native-screens
+react-native-safe-area-context
+\end{verbatim}
+\end{block}
+\end{frame}
+\begin{frame}[fragile]{ Exemple d'utilisation}
+\begin{block}{ }
+
+\end{block}
+
+\end{frame}
+
+
+\section{Gestion de l’état et des données}
+\begin{frame}[fragile]{ Gestion de l’état avec React}
+\begin{block} {Utiliser le state local et les hooks (useState, useEffect)}
+le hook useState est utilisé pour déclarer des states dans un
+composant fonctionnel
+Syntaxe
+\begin{verbatim}
+const [state, setState] = useState(initialValue) ;
+
+\end{verbatim}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{ }
+\begin{block} {}
+Exemple :
+
+\begin{verbatim}
+import React, { useState } from ’react’;
+function Compteur() {
+// Déclare un état "count" avec une valeur initiale de 0
+const [count, setCount] = useState(0);
+return (
+<div>
+<p>Compteur : {count}</p>
+<button onClick={() => setCount(count + 1)}>
+Incrémenter</button>
+</div>
+);
+}
+\end{verbatim}
+
+\end{block}
+\end{frame}
+\begin{frame}[fragile]{}
+\begin{block}{}
+useEffect est utilisé pour gérer les effets secondaires dans un
+composant fonctionnel. Un effet secondaire peut être toute
+opération qui a un impact en dehors du composant, comme la
+récupération de données depuis une API,syntaxe
+\begin{verbatim}
+useEffect(() => {
+}, [dependencies]);
+\end{verbatim}
+\end{block}
+\end{frame}
+\begin{frame}[fragile]{ Exemple d'utilisation}
+\begin{block}{ }
+
+\end{block}
+
+\end{frame}
+\begin{frame}[fragile]{Appels API et gestion des données}
+\begin{block}{ntroduction à Fetch API pour récupérer des données}
+fecth est une méthode qui permet de contacter l’endpoint d’ uneAPI et retourne une promesse
+Exemple :récupérer les cours depuis api de spring boot
+\begin{verbatim}
+const API_BASE_URL = 'http://localhost:8080/api';
+const recupererCours = async () => {
+try {
+const response = await fetch(‘${API_BASE_URL}
+/cours‘);
+if (!response.ok) throw new
+Error(’Erreur lors de la récupération des cours’);
+const data = await response.json();
+setCours(data);
+} catch (error) {
+console.error(error);
+}
+};
+\end{verbatim}
+\end{block}
+\end{frame}
+\begin{frame}[fragile]{ Afficher des données dynamiques dans l’application}
+\begin{block}{ }
+Pour afficher les données dynamiques nous allons utiliser le
+composant \textbf{FlatList}.Il a trois propriétés importantes\\
+\textbf{data} : La source des données (le tableau des éléments à
+afficher).\\
+\textbf{keyExtractor} : Fournit une clé unique pour chaque élément.\\
+\textbf{renderItem} : Détermine comment chaque élément doit être
+affiché.\\
+Exemple :affichons les cours récupérer de manière dynamique
+\begin{verbatim}
+<FlatList
+data={recupererCours}
+keyExtractor={(item) => item.id.toString()}
+renderItem={({ item }) => (
+<View style={styles.tableRow}>
+<Text>{item.titre}</Text>
+<Text>{item.description}</Text>
+<Text>{item.prix} FCfa</Text>
+<Text}>{item.credit}</Text>
+)}
+/>
+\end{verbatim}
+\end{block}
+
+\end{frame}
+\section{Formulaires}
+\begin{frame}[fragile]{Utiliser Formik et Yup pour la validation des formulaires}
+\begin{block}{Yup }
+Yup est une bibliothèque de validation d’objets pour JavaScript qui vous permet de définir des règles de validation pour des données,
+généralement dans le cadre de la gestion de formulaires.IL offre
+une variété de méthodes pour valider différents types de données \\
+Exemple
+\begin{verbatim}
+Yup.string() : Pour valider des chaines de caractères.
+Yup.number() : Pour valider des nombres.
+Yup.boolean() : Pour valider des valeurs booléennes (true ou false).
+Yup.date() : Pour valider des objets de type Date.
+Yup.array() : Pour valider des tableaux.
+Yup.object() : Pour valider des objets.
+\end{verbatim}
+\end{block}
+\end{frame}
+\begin{block}{Formik }
+Le composant Formik est utilisé pour gérer l’état du formulaire. Il prend plusieurs propriétés :\\
+\textbf{initialValues} : Il définit les valeurs initiales des champs du
+formulaire.\\
+\textbf{validationSchema} :qui vérifie si les données sont valide\\
+\textbf{onSubmit} : C’est la fonction qui sera appelée lorsque le formulaire est soumis.\\
+\end{block}
+
+\begin{verbatim}
+import React, { useContext } from 'react';
+import { Formik, Field, Form, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
+import "bootstrap/dist/css/bootstrap.css";
+import { useRouter } from 'expo-router';
+import { AuthContext } from '../../context/AuthProvider'; // Corrigez le chemin d'importation
+
+const router = useRouter();
+
+const validationSchema = Yup.object().shape({
+  titre: Yup.string()
+    .min(2, "trop petit")
+    .max(255, "trop long!")
+    .required("Ce champ est obligatoire"),
+  description: Yup.string()
+  
+    .min(2, "trop petit")
+    .max(255, "trop long!")
+    .required("Ce champ est obligatoire"),
+  prix: Yup.number()
+    .min(0, "le prix doit etre positif")
+    .required("le prix est obligatoire"),
+  credit: Yup.number()
+    .min(0, "le credit doit etre positif")
+    .required("le credit est obligatoire"),
+});
+
+const initialValues = {
+  titre: "",
+  description: "",
+  prix: "",
+  credit: "",
+};
+
+const Formulaire = () => {
+  const { user } = useContext(AuthContext); // Utilisez le contexte Auth
+  if (!user) {
+    alert("l'utilisateur n'est pas connecté");
+    return null;
+  }
+
+  const handleSubmit = async (values) => {
+    try {
+      const response = await fetch('http://localhost:8080/api/cours', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${user.token}`, // Utilisez le token de l'utilisateur
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (!response.ok) {
+        throw new Error('Une erreur est survenue lors de l\'enregistrement des données.');
+      }
+
+      const data = await response.json();
+      console.log('Données enregistrées:', data);
+      router.push('cours/liste');
+    } catch (error) {
+      console.error('Erreur:', error);
+    }
+  };
+
+  return (
+    <div className="container">
+      <div className="row">
+        <div className="col-md-6 offset-md-3 pt-3">
+          <h1 className="text-center">Enregistrer un cours</h1>
+          <Formik
+            initialValues={initialValues}
+            validationSchema={validationSchema}
+            onSubmit={handleSubmit}
+          >
+            {({ resetForm }) => (
+              <Form>
+                <div className="form-group mb-3">
+                  <label htmlFor="titre">Titre : </label>
+                  <Field
+                    type="text"
+                    id="titre"
+                    name="titre"
+                    className="form-control"
+                  />
+                  <ErrorMessage
+                    name="titre"
+                    component="small"
+                    className="text-danger"
+                  />
+                </div>
+                <div className="form-group mb-3">
+                  <label htmlFor="description">Description : </label>
+                  <Field
+                    type="text"
+                    id="description"
+                    name="description"
+                    className="form-control"
+                  />
+                  <ErrorMessage
+                    name="description"
+                    component="small"
+                    className="text-danger"
+                  />
+                </div>
+                <div className="form-group mb-3">
+                  <label htmlFor="prix">Prix : </label>
+                  <Field
+                    type="number"
+                    id="prix"
+                    name="prix"
+                    className="form-control"
+                  />
+                  <ErrorMessage
+                    name="prix"
+                    component="small"
+                    className="text-danger"
+                  />
+                </div>
+                <div className="form-group mb-3">
+                  <label htmlFor="credit"> Credit : </label>
+                  <Field
+                    type="number"
+                    id="credit"
+                    name="credit"
+                    className="form-control"
+                  />
+                  <ErrorMessage
+                    name="credit"
+                    component="small"
+                    className="text-danger"
+                  />
+                </div>
+                <div className="form-group d-flex justify-content-end gap-3">
+                  <button
+                    type="submit"
+                    className="btn btn-primary"
+                  >
+                    Enregistrer
+                  </button>
+                  <button
+                    type="button"
+                    onClick={resetForm}
+                    className="btn btn-danger"
+                  >
+                    Annuler
+                  </button>
+                </div>
+              </Form>
+            )}
+          </Formik>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Formulaire;
+\end{verbatim}
+\end{frame}
+
+
+\section{Authentification avec provider}
+
+\section{Le deploiement }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Conclusion}
+\begin{frame}[fragile]{Conclusion}
+Avec ces bases, vous pouvez commencer à créer des interfaces
+utilisateur simples et efficaces dans React Native.
+\end{frame}
+
+
+\section{MERCI POUR VOTRE ATTENTION}
+
+
+
+
+\end{document}
